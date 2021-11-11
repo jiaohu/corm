@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="corm_boost"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\test\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\opt\;CMake Files\..\..\..\..\opt\homebrew\;CMake Files\..\..\..\..\opt\homebrew\lib\;CMake Files\..\..\..\..\opt\homebrew\lib\cmake\;CMake Files\..\..\..\..\opt\homebrew\lib\cmake\Boost-1.76.0\;CMake Files\..\..\..\..\opt\homebrew\lib\cmake\boost_headers-1.76.0\;CMake Files\..\..\..\..\opt\homebrew\lib\cmake\boost_unit_test_framework-1.76.0\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/likai/c_project/corm/test"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/likai/c_project/corm/test/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/likai/c_project/corm/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/likai/c_project/corm/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/likai/c_project/corm/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="corm_boost">
+				<Option output="/Users/likai/c_project/corm/test/corm_boost" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/likai/c_project/corm/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add option="-DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK"/>
+					<Add directory="/Users/likai/c_project/corm/."/>
+					<Add directory="/opt/homebrew/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/likai/c_project/corm/test/Makefile&quot;  VERBOSE=1 corm_boost"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/likai/c_project/corm/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/likai/c_project/corm/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/likai/c_project/corm/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="corm_boost/fast">
+				<Option output="/Users/likai/c_project/corm/test/corm_boost" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/likai/c_project/corm/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DBOOST_ALL_NO_LIB"/>
+					<Add option="-DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK"/>
+					<Add directory="/Users/likai/c_project/corm/."/>
+					<Add directory="/opt/homebrew/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.5/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/likai/c_project/corm/test/Makefile&quot;  VERBOSE=1 corm_boost/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/likai/c_project/corm/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/likai/c_project/corm/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/likai/c_project/corm/test/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/likai/c_project/corm/test/tests.cpp">
+			<Option target="corm_boost"/>
+		</Unit>
+		<Unit filename="/Users/likai/c_project/corm/type.h">
+			<Option target="corm_boost"/>
+		</Unit>
+		<Unit filename="/Users/likai/c_project/corm/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/likai/c_project/corm/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+		<Unit filename="/Users/likai/c_project/corm/../../../../opt/homebrew/lib/cmake/BoostDetectToolset-1.76.0.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/likai/c_project/corm/../../../../opt/homebrew/lib/cmake/Boost-1.76.0/BoostConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\Boost-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/likai/c_project/corm/../../../../opt/homebrew/lib/cmake/Boost-1.76.0/BoostConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\Boost-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/likai/c_project/corm/../../../../opt/homebrew/lib/cmake/boost_headers-1.76.0/boost_headers-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\boost_headers-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/likai/c_project/corm/../../../../opt/homebrew/lib/cmake/boost_headers-1.76.0/boost_headers-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\boost_headers-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/likai/c_project/corm/../../../../opt/homebrew/lib/cmake/boost_unit_test_framework-1.76.0/boost_unit_test_framework-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\boost_unit_test_framework-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/likai/c_project/corm/../../../../opt/homebrew/lib/cmake/boost_unit_test_framework-1.76.0/boost_unit_test_framework-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\boost_unit_test_framework-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/likai/c_project/corm/../../../../opt/homebrew/lib/cmake/boost_unit_test_framework-1.76.0/libboost_unit_test_framework-variant-mt-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\boost_unit_test_framework-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/likai/c_project/corm/../../../../opt/homebrew/lib/cmake/boost_unit_test_framework-1.76.0/libboost_unit_test_framework-variant-mt-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\boost_unit_test_framework-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/likai/c_project/corm/../../../../opt/homebrew/lib/cmake/boost_unit_test_framework-1.76.0/libboost_unit_test_framework-variant-shared.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\boost_unit_test_framework-1.76.0\"/>
+		</Unit>
+		<Unit filename="/Users/likai/c_project/corm/../../../../opt/homebrew/lib/cmake/boost_unit_test_framework-1.76.0/libboost_unit_test_framework-variant-static.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\opt\homebrew\lib\cmake\boost_unit_test_framework-1.76.0\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

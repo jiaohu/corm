@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+CMakeFiles/
+cmake-build-debug/
+Testing/
+build/
+corm
+.idea
+.vscode
+corm_boost
