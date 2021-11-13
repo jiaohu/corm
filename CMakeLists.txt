@@ -11,7 +11,6 @@ if (WIN32)
     set(MYSQL_ROOT_DIR C:\\Program\ Files\\MySQL\\MySQL\ Server\ 8.0)
     message(${MYSQL_ROOT_DIR})
 elseif (APPLE)
-    set(MYSQL_ROOT_DIR /opt/homebrew/Cellar/mysql/8.0.26)
     message(${MYSQL_ROOT_DIR})
 endif ()
 

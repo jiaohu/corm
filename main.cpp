@@ -4,7 +4,10 @@
 #include <iostream>
 #include <cstdio>
 #include "type.h"
+#ifdef WIN32
 #include "mysql.h"
+#elif APPLE
+#include "mysql/mysql.h"
 using namespace std;
 struct Student {
     struct IntColumn id;
