@@ -4,7 +4,7 @@
 #include <iostream>
 #include <cstdio>
 #include "type.h"
-#include "mysql/mysql.h"
+#include "mysql.h"
 using namespace std;
 struct Student {
     struct IntColumn id;
@@ -19,7 +19,7 @@ int main() {
 //    std::cout<<conn->getDriver()->getName();
     MYSQL mysqlConnect;
     mysql_init(&mysqlConnect);
-    if (!mysql_real_connect(&mysqlConnect, "127.0.0.1", "user", "password", NULL, MYSQL_PORT, NULL, 0)) {
+    if (!mysql_real_connect(&mysqlConnect, "127.0.0.1", "root", "likai123456", NULL, MYSQL_PORT, NULL, 0)) {
         printf("failed\n");
         return -1;
     }

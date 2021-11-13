@@ -38,3 +38,8 @@ corm
 .idea
 .vscode
 corm_boost
+.vs
+Debug
+corm.dir
+x64
+CMakeCache.txt
