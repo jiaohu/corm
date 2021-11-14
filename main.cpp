@@ -8,6 +8,7 @@
 #include "mysql.h"
 #elif APPLE
 #include "mysql/mysql.h"
+#endif
 using namespace std;
 struct Student {
     struct IntColumn id;
