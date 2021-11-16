@@ -6,7 +6,7 @@
 #include "type.h"
 #ifdef WIN32
 #include "mysql.h"
-#elif APPLE
+#elif MAC_OS_VERSION_11_0
 #include "mysql/mysql.h"
 #endif
 using namespace std;
